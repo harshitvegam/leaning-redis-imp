@@ -1,0 +1,3 @@
+
+reference for local set up with docker 
+https://www.bytebase.com/reference/mongodb/how-to/how-to-install-mongodb-using-docker/
