@@ -1,0 +1,13 @@
+[project]
+name = "product-order-service"
+version = "0.1.0"
+description = "this is project to learn hande"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.135.3",
+    "pydantic>=2.12.5",
+    "python-dotenv>=1.2.2",
+    "redis>=7.4.0",
+    "uvicorn>=0.44.0",
+]
