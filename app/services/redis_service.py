@@ -82,16 +82,16 @@ class RedisService:
     # ---------------------------
     @staticmethod
     async def cache_set(key: str, value: Dict, ttl: int =2000):
-        cached_key = f"user:cache:{key}"
+        cached_key = f"cache:user:{key}"
         await RedisService.set_json(cached_key, value, ex=ttl)
 
     @staticmethod
     async def cache_get(key: str) -> Optional[Dict]:
-        cached_key = f"user:cache:{key}"
+        cached_key = f"cache:user:{key}"
         return await RedisService.get_json(cached_key)
     @staticmethod
     async def delete_cache(key: str):
-        cached_key = f"user:cache:{key}"
+        cached_key = f"cache:user:{key}"
         await RedisService.delete(cached_key)   
     # ---------------------------
     # 🔹 METRICS
