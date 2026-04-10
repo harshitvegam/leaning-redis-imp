@@ -5,7 +5,7 @@ from app.producer.stream import publish_user_created
 from app.services.redis_service import RedisService
 from app.models.user import CreateUserRequest, UpdateUserRequest, UserResponse
 
-
+from app.config.logging import logger
 class UserService:
 
     KEY_PREFIX = "user"
@@ -16,7 +16,7 @@ class UserService:
     @staticmethod
     async def _generate_user_id() -> str:
         user_id = await RedisService.increment("metric:users:id")
-        print(f"Generated user ID: {user_id}")
+        logger.debug(f"Generated user ID: {user_id}")
         return str(user_id)
 
     # ---------------------------
@@ -27,7 +27,7 @@ class UserService:
         user_id = await UserService._generate_user_id()
 
         user_key = f"{UserService.KEY_PREFIX}:{user_id}"
-        print(f"Creating user with key: {user_key}")
+        logger.debug(f"Creating user with key: {user_key}")
         user_data = {
             "user_id": user_id,
             "name": data.name,
@@ -37,10 +37,10 @@ class UserService:
         }
 
         await RedisService.set_json(user_key, user_data)
-        print(f"User created in Redis: {user_data}")
-        print(" user data ",type(user_data), user_data)
+        logger.debug(f"User created in Redis: {user_data}")
+        logger.debug(" user data ",type(user_data), user_data)
         await publish_user_created(user_data)
-        print(f"Published user created event for user_id: {user_id}")
+        logger.debug(f"Published user created event for user_id: {user_id}")
         # metric
         await RedisService.increment("metric:users:created")
 

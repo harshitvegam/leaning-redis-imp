@@ -1,0 +1,87 @@
+2026-04-10 12:43:32,906 - my_app - INFO - Starting up...
+2026-04-10 12:43:32,906 - my_app - INFO - Connecting to Redis...
+2026-04-10 12:43:32,906 - my_app - INFO - REDIS_URL: redis://localhost:6379
+2026-04-10 12:45:17,834 - my_app - INFO - Starting up...
+2026-04-10 12:45:17,834 - my_app - INFO - Connecting to Redis...
+2026-04-10 12:45:17,834 - my_app - INFO - REDIS_URL: redis://localhost:6379
+2026-04-10 12:45:17,847 - my_app - INFO - Connected to Redis successfully!
+2026-04-10 12:45:48,825 - my_app - INFO - Generated user ID: 129
+2026-04-10 12:45:48,825 - my_app - INFO - Creating user with key: user:129
+2026-04-10 12:45:48,845 - my_app - INFO - User created in Redis: {'user_id': '129', 'name': 'string', 'email': 'string', 'number': 'string', 'created_at': '2026-04-10T07:15:48.825601'}
+2026-04-10 12:45:48,857 - my_app - INFO - Before Publishing to stream:
+2026-04-10 12:45:48,872 - my_app - INFO - After Publishing to stream:
+2026-04-10 12:45:48,872 - my_app - INFO - Published user created event for user_id: 129
+2026-04-10 12:45:48,926 - my_app - INFO - Generated user ID: 130
+2026-04-10 12:45:48,926 - my_app - INFO - Creating user with key: user:130
+2026-04-10 12:45:48,928 - my_app - INFO - User created in Redis: {'user_id': '130', 'name': 'string', 'email': 'string', 'number': 'string', 'created_at': '2026-04-10T07:15:48.926593'}
+2026-04-10 12:45:48,940 - my_app - INFO - Before Publishing to stream:
+2026-04-10 12:45:48,940 - my_app - INFO - After Publishing to stream:
+2026-04-10 12:45:48,940 - my_app - INFO - Published user created event for user_id: 130
+2026-04-10 12:45:49,144 - my_app - INFO - Generated user ID: 131
+2026-04-10 12:45:49,144 - my_app - INFO - Creating user with key: user:131
+2026-04-10 12:45:49,145 - my_app - INFO - User created in Redis: {'user_id': '131', 'name': 'string', 'email': 'string', 'number': 'string', 'created_at': '2026-04-10T07:15:49.145520'}
+2026-04-10 12:45:49,151 - my_app - INFO - Before Publishing to stream:
+2026-04-10 12:45:49,151 - my_app - INFO - After Publishing to stream:
+2026-04-10 12:45:49,151 - my_app - INFO - Published user created event for user_id: 131
+2026-04-10 12:50:19,886 - my_app - INFO - Disconnected from Redis successfully!
+2026-04-10 12:50:19,886 - my_app - INFO - Shutting down...
+2026-04-10 12:50:21,854 - my_app - INFO - Starting up...
+2026-04-10 12:50:21,854 - my_app - INFO - Connecting to Redis...
+2026-04-10 12:50:21,854 - my_app - INFO - REDIS_URL: redis://localhost:6379
+2026-04-10 12:50:21,871 - my_app - INFO - Connected to Redis successfully!
+2026-04-10 12:52:15,858 - my_app - INFO - Starting up...
+2026-04-10 12:52:15,858 - my_app - INFO - Connecting to Redis...
+2026-04-10 12:52:15,858 - my_app - INFO - REDIS_URL: redis://localhost:6379
+2026-04-10 12:52:15,873 - my_app - INFO - Connected to Redis successfully!
+2026-04-10 12:52:19,653 - my_app - INFO - Received request to create user: name='string' email='string' number='string'
+2026-04-10 12:52:31,188 - my_app - INFO - Received request to get user with ID: 133
+2026-04-10 12:52:31,189 - my_app - WARNING - Cache miss for user_id: 133. Fetching from Redis...
+2026-04-10 12:52:31,576 - my_app - INFO - Received request to get user with ID: 133
+2026-04-10 12:52:31,579 - my_app - INFO - Cache hit for user_id: 133
+2026-04-10 12:52:31,807 - my_app - INFO - Received request to get user with ID: 133
+2026-04-10 12:52:31,809 - my_app - INFO - Cache hit for user_id: 133
+2026-04-10 12:52:32,128 - my_app - INFO - Received request to get user with ID: 133
+2026-04-10 12:52:32,130 - my_app - INFO - Cache hit for user_id: 133
+2026-04-10 12:52:32,375 - my_app - INFO - Received request to get user with ID: 133
+2026-04-10 12:52:32,377 - my_app - INFO - Cache hit for user_id: 133
+2026-04-10 12:52:32,507 - my_app - INFO - Received request to get user with ID: 133
+2026-04-10 12:52:32,509 - my_app - INFO - Cache hit for user_id: 133
+2026-04-10 12:52:32,708 - my_app - INFO - Received request to get user with ID: 133
+2026-04-10 12:52:32,710 - my_app - INFO - Cache hit for user_id: 133
+2026-04-10 12:55:47,855 - my_app - INFO - Starting up...
+2026-04-10 12:55:47,855 - my_app - INFO - Connecting to Redis...
+2026-04-10 12:55:47,855 - my_app - INFO - REDIS_URL: redis://localhost:6379
+2026-04-10 12:55:47,874 - my_app - INFO - Connected to Redis successfully!
+2026-04-10 12:55:57,533 - my_app - INFO - Received request to get user with ID: 133
+2026-04-10 12:55:57,549 - my_app - INFO - Cache hit for user_id: 133
+2026-04-10 12:55:57,594 - my_app - INFO - Received request to get user with ID: 133
+2026-04-10 12:55:57,596 - my_app - INFO - Cache hit for user_id: 133
+2026-04-10 12:55:57,711 - my_app - INFO - Received request to get user with ID: 133
+2026-04-10 12:55:57,713 - my_app - INFO - Cache hit for user_id: 133
+2026-04-10 12:55:57,923 - my_app - INFO - Received request to get user with ID: 133
+2026-04-10 12:55:57,926 - my_app - INFO - Cache hit for user_id: 133
+2026-04-10 12:55:58,346 - my_app - INFO - Received request to get user with ID: 133
+2026-04-10 12:55:58,348 - my_app - INFO - Cache hit for user_id: 133
+2026-04-10 12:55:58,568 - my_app - INFO - Received request to get user with ID: 133
+2026-04-10 12:55:58,570 - my_app - INFO - Cache hit for user_id: 133
+2026-04-10 12:56:14,463 - my_app - INFO - Received request to create user: name='string' email='string' number='string'
+2026-04-10 12:56:14,465 - my_app - DEBUG - Generated user ID: 134
+2026-04-10 12:56:14,465 - my_app - DEBUG - Creating user with key: user:134
+2026-04-10 12:56:14,468 - my_app - DEBUG - User created in Redis: {'user_id': '134', 'name': 'string', 'email': 'string', 'number': 'string', 'created_at': '2026-04-10T07:26:14.465921'}
+2026-04-10 12:56:14,483 - my_app - DEBUG - Before Publishing to stream:
+2026-04-10 12:56:14,497 - my_app - DEBUG - After Publishing to stream:
+2026-04-10 12:56:14,499 - my_app - DEBUG - Published user created event for user_id: 134
+2026-04-10 12:56:14,668 - my_app - INFO - Received request to create user: name='string' email='string' number='string'
+2026-04-10 12:56:14,669 - my_app - DEBUG - Generated user ID: 135
+2026-04-10 12:56:14,670 - my_app - DEBUG - Creating user with key: user:135
+2026-04-10 12:56:14,672 - my_app - DEBUG - User created in Redis: {'user_id': '135', 'name': 'string', 'email': 'string', 'number': 'string', 'created_at': '2026-04-10T07:26:14.670859'}
+2026-04-10 12:56:14,682 - my_app - DEBUG - Before Publishing to stream:
+2026-04-10 12:56:14,683 - my_app - DEBUG - After Publishing to stream:
+2026-04-10 12:56:14,683 - my_app - DEBUG - Published user created event for user_id: 135
+2026-04-10 12:56:14,870 - my_app - INFO - Received request to create user: name='string' email='string' number='string'
+2026-04-10 12:56:14,872 - my_app - DEBUG - Generated user ID: 136
+2026-04-10 12:56:14,872 - my_app - DEBUG - Creating user with key: user:136
+2026-04-10 12:56:14,873 - my_app - DEBUG - User created in Redis: {'user_id': '136', 'name': 'string', 'email': 'string', 'number': 'string', 'created_at': '2026-04-10T07:26:14.873512'}
+2026-04-10 12:56:14,884 - my_app - DEBUG - Before Publishing to stream:
+2026-04-10 12:56:14,884 - my_app - DEBUG - After Publishing to stream:
+2026-04-10 12:56:14,884 - my_app - DEBUG - Published user created event for user_id: 136

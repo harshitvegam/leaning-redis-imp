@@ -1,8 +1,8 @@
 import uvicorn
 from app.main import app
-
+from app.config.logging import logger
 def main():
-    print("Hello from product-order-service!")
+    logger.info("Hello from product-order-service!")
 
 
 if __name__ == "__main__":

@@ -6,21 +6,22 @@ from app.db.redis_client import connect_redis, disconnect_redis, get_redis
 from dotenv import load_dotenv
 from app.api import user
 from app.services.redis_service import RedisService
+from app.config.logging import logger
 load_dotenv()  # Load environment variables from .env file
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Initialize resources (e.g., database connections, Redis clients)
-    print("Starting up...")
-    print("Connecting to Redis...")
-    print(f"REDIS_URL: {os.getenv('REDIS_URL')}")
+    logger.info("Starting up...")
+    logger.info("Connecting to Redis...")
+    logger.info(f"REDIS_URL: {os.getenv('REDIS_URL')}")
     await connect_redis(os.getenv("REDIS_URL"))
     yield  # This is where the application runs
 
     await disconnect_redis()
     # Clean up resources
-    print("Shutting down...")
+    logger.info("Shutting down...")
 
 
 
